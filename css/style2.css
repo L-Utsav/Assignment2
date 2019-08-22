@@ -21,25 +21,38 @@ p{
     font-weight: bold;
 }
 
-#showcase h1{
+#showcase1 h2, #showcase2 h2, #info1 h2, #info2 h2{
     font-size: 50px;
     margin-bottom: 20px;
 }
-#showcase img{
+#showcase1 img, #showcase2 img{
     width: 80%;
     margin-left: 40px;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
-#showcase .showcase-left{
+#showcase1 .showcase-left, #showcase2 .showcase-left{
     margin-top: 60px;
 }
 
-#info1{
+#info1 img, #info2 img{
+    width: 80%;
+    margin-right: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#info1, #info2{
+    padding-top: 40px;
     background-color: #f1f1f1;
     padding-bottom: 20px;
 
+}
+
+#showcase1, #showcase2{
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .center{
     display: block;
@@ -47,24 +60,51 @@ p{
     margin-right: auto;
   
 }
+
+.google-maps {
+
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+#about{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 #a2{
     width: 50%;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    background: #000;
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: #000 solid;
+    color: white;
 }
 #home{
     padding-top: 50px;
     padding-bottom: 20px;
-}
+}  
 
-#howtomake{
+#about{
     padding-top: 40px;
     padding-bottom: 20px;
 }
-#info1 .info-right{
+
+#info1 .info-right, #info2 .info-right{
     margin-top: 90px;
 }
 
-#info1 img{
+#info1 img, #info2 img{
     width: 80%;
     margin-right: 40px;
     margin-top: 90px; 
@@ -74,18 +114,21 @@ p{
 .a1{
     color: #000;
 }
+
 #contact{
-    background: url("../img/lelouch.jpeg");
-    background-size: cover;
     padding-top: 40px;
+    background: url("../img/lelouch.jpeg");
+    background-size: 100%;
     padding-bottom: 40px;
     border-top: #333 7px solid;
     border-bottom: #333 7px solid;
-    color: black;
+    color: white;
     margin-top: 50px;
 }
 
+
 footer{
+    padding-top: 30px;
     padding-bottom: 30px;
     font-size: 30px;
 }

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href ="css/style2.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -18,8 +18,18 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">Home</a></li>
-              <li><a href="#howtomake">About</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a class= "dropdown-toggle" data-toggle="dropdown" href="#">Famous Characters<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#showcase1">Deku</a></li>
+                  <li><a href="#info1">Eren</a></li>
+                  <li><a href="#showcase2">Light</a></li>
+                  <li><a href="#info2">Kaneki</a></li>
+                  <li><a href="#a2">This week's favorites</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -37,7 +47,7 @@
             </div>
             <div class="col-sm-4 col-md-4">
               <h3>Practice using some concept</h3>
-              <p>Like the one used here for anime charcaters and share it for otakus</p>
+              <p>Like the one used here for anime characters and share it for otakus</p>
             </div>
             <div class="col-sm-4 col-md-4">
               <h3>Make a responsive website</h3>
@@ -46,13 +56,13 @@
           </div>
         </div>
         <hr>
-      <section id="showcase">
+      <section id="showcase1">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6">
                 <div class="showcase-left">
-                    <h1>Deku - Izuku Midoriya</h1>
-                    <p>Click 'Read More' to know the story of how he became the greatest hero</p>
+                    <h2>Deku - Izuku Midoriya</h2>
+                    <p>Born without any quirk, still became the greatest hero of the world</p>
                  </div>
                  <br>
                  <a class="btn btn-default btn-lg showcase-btn" href="https://bokunoheroacademia.fandom.com/wiki/Izuku_Midoriya">Read More</a>
@@ -77,7 +87,7 @@
               <div class="col-md-6 col-sm-6">
                 <div class="info-right">
                   <h2>Eren Yaeger - A Titan Shifter</h2>
-                  <p>One of the main characters of the Attack on Titan Series, he regularly features on our website</p>
+                  <p>One of the main characters of the Attack on Titan Series, who regularly features on our website</p>
                 </div>
                 <br>
                   <a class="btn btn-default btn-lg" href="https://attackontitan.fandom.com/wiki/Eren_Yeager">Read More</a>
@@ -85,17 +95,56 @@
           </div>
         </div>
       </section>
+      <section id="showcase2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                  <div class="showcase-left">
+                      <h2>Light Yagami/Kira - God of the new world</h2>
+                      <p>Arguably, the most/second most intelligent of the series and perhaps of the entire anime universe</p>
+                   </div>
+                   <br>
+                   <a class="btn btn-default btn-lg showcase-btn" href="https://deathnote.fandom.com/wiki/Light_Yagami">Read More</a>
+              </div>
+  
+              <div class="col-md-6 col-sm-6">
+                <div class="showcase-right">
+                    <img src="img/light.jpeg">
+                  </div>
+            </div>
+          </div>
+        </section>
+        <section id="info2">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                      <img src="img/ken.jpeg">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                      <h2>Ken Kaneki - A one-eyed Ghoul</h2>
+                      <p>The mostly protagonist and sometimes antagonist of the series who became powerful after becoming a half-ghoul</p>
+                    </div>
+                    <br>
+                      <a class="btn btn-default btn-lg" href="https://tokyoghoul.fandom.com/wiki/Ken_Kaneki">Read More</a>
+                  </div>
+              </div>
+            </div>
+          </section>
       <hr>
       <div class = "jumbotron text-center">
-          <header id="howtomake">
+          <header id="about">
           <h1>About Our Website</h1>
-          <p>This is a website created for sharing the stories of several famours main and supporting charcaters of various hit animes.</p>
+          <p>This is a website created for sharing the stories of several famours main and supporting characters of various hit animes.</p>
           </header>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi suscipit cumque dicta, alias itaque sequi vel in dolorum.</p>
       </div> 
-<br>
+
 <div class="container" id="a2">
     <h2>Our this week's favorite characters</h2>
+    
     <div class="row">
         <div class="col-sm-12">
     
@@ -107,21 +156,21 @@
                 </ol>
 
                 <div class="carousel-inner">
-                    <div class="item active">
+                    <div class="item active" id="b5">
                         <img src="img/senku.jpeg" class="center" alt="senku" style="width: 100%" height="70px">
                         <div class="carousel-caption">
                             <a href="https://dr-stone.fandom.com/wiki/Senku_Ishigami"><h1 class="a1">Senku from Dr. Stone</h1></a>
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" id="b6">
                         <img src="img/hyakk.jpeg" class="center" alt="hyakkimaru" style="width: 100%" height="70px">
                         <div class="carousel-caption">
                            <a href="https://dororo.fandom.com/wiki/Hyakkimaru"><h1>Hyakkimaru from Dororo</h1></a>
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" id="b7">
                         <img src="img/saitama.jpeg" class="center" alt="saitama" style="width: 100%" height="70px">
                         <div class="carousel-caption">
                            <a href="https://onepunchman.fandom.com/wiki/Saitama"><h1>Saitama from One Punch Man</h1></a>
@@ -141,16 +190,18 @@
           </div>
         </div>  
     </div>
+
 </div>
                       <br>
             <section id="contact">
               <div class="container">
                 <div class="row">
-                  <header>
-                    <h2><u><i>Help us in improving our site</i></u></h2>
-                  </header>
-                   <br>
+                  
                   <div class="col-md-5 col-sm-5">
+                      <header>
+                          <h2><u>Help us in improving our site</u></h2>
+                        </header>
+                         <br>
                       <form>
                           <div class="form-group">
                               <label?>Full Name: </label>
@@ -162,7 +213,7 @@
                           </div>
                           <div class="form-group">
                                   <label?>Mobile Number: </label>
-                                  <input class="form-control"  type="number" name="" value="" placeholder="Enter Mobile Number">
+                                  <input class="form-control"  type="text" pattern = "[6-9]{1}[0-9]{9}" name="" value="" placeholder="Enter Mobile Number">
                           </div>
                           <div class="form-group">
                                 <label?>Message: </label>
@@ -170,7 +221,7 @@
                           </div>
                           <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
                               <!-- Modal -->
-                          <div class="modal fade" id="myModal" role="dialog">
+                          <div class="modal fade" id="myModal" role="dialog" style="color:black">
                             <div class="modal-dialog">
                                   <!-- Modal content-->
                               <div class="modal-content">
@@ -190,14 +241,32 @@
                           </form>
                       </div>
                       <div class="col-md-7 col-sm-7">
-                          
+                         
                       </div>
                   </div>
                 </div>
               </section>
+              <section class="jumbotron text-center">
+                <h2>Our Head Office</h2>
+                  <p style="text-align: center; margin: 0"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe></p>
+              </section>
+              <hr>
         <footer>
+            <span style="text-align: center; margin: 10px">
+                <h2>Follow us on</h2>
+                <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                </div>
+           </span>
                 <marquee direction = "right" scrollamount = 15>
-                <span id="foot">Copyright ©️ The Bootstrappers</span></marquee>
+                <span id="foot">Copyright ©️ The Bootstrappers</span>
+                </marquee>
+              
         </footer>
     </body>
 </html>
