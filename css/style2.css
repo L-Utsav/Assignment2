@@ -1,54 +1,51 @@
-.container{
-    background-image:url("../img/img3.jpeg");
-    background-size: cover;
-    padding: 15px;
-    width: 100%;
-    height: 300px;
-
+body{
+    margin-top: 70px;
+    font-size: 16px;
 }
 
-h1{
-    padding-top: 100px;
-    text-align: center ;
-    font-style: bold;;
-    font-size: 60;
-    
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
 }
+
 p{
-    text-align: center;
+    font-family: Roboto;
 }
-.navbar{
-    position: fixed;
-    width: 100%;
+.navbar-default{
+    border: 0;
+    font-family: Poppins;
+}
+
+.navbar-brand{
     font-size: 20px;
+    color: #000 !important;
+    font-weight: bold;
 }
 
-ul{ 
-   
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: #786;
-    padding: 20px;
-
+#showcase h1{
+    font-size: 50px;
+    margin-bottom: 20px;
 }
-li{
-    display: inline;
-    padding: 10px;
+#showcase img{
+    width: 100%;
+    margin-right: 60px;
 }
 
-li a{
-   
-    color: black;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
+#showcase .showcase-left{
+    margin-top: 60px;
 }
 
-li a:hover:not(.active) {
-    color: white;
-    background-color: #788;
-    padding: 20px;
-    border:1px dotted black;
-  }
+#info1{
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
 
+}
+
+#info1 .info-right{
+    margin-top: 90px;
+}
+
+#info1 img{
+    width: 80%;
+    margin-left: 60px;
+    margin-top: 90px; 
+}
