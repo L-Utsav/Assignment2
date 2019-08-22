@@ -7,51 +7,45 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="Stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href ="css/style2.css"/>
-        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         
     </head>
     <body>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">The Bootstrappers</a>
-          </div>
+          <a class="navbar-brand" href="#">The Bootstrappers</a>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#showcase">Home</a></li>
-              <li><a href="#info1">About</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#howtomake">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div><!--/.nav-collapse-->
+          </div>
         </div>
       </nav>
       <div class="jumbotron text-center">
-          <h1>The BOOTSTRAPPERS</h1>
+          <h1 id="home">The BOOTSTRAPPERS</h1>
           <p>Wanna do some brainstorming? This website is the correct place for those individuals who want to practice bootstrapping in html</p>
         </div>
         
-        <div class="container" background="../Assignment2/img/img1.jpeg">
+        <div class="container" background="../img/img1.jpeg">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3 col-md-3">
               <h3>Study Bootstrap</h3>
               <p>Lorem ipsum dolor..</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-4">
               <h3>Practice Bootstrap</h3>
               <p>Lorem ipsum dolor..</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-5 col-md-5">
               <h3>Make your own responsive website</h3>
               <p>Lorem ipsum dolor..</p>
             </div>
           </div>
         </div>
+        <hr>
       <section id="showcase">
         <div class="container">
           <div class="row">
@@ -65,18 +59,18 @@
 
             <div class="col-md-6 col-sm-6">
               <div class="showcase-right">
-                  <img src="data:image/jpeg;base64,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">
+                  <img src="img/deku.jpeg">
                 </div>
           </div>
         </div>
       </section>
-<br>
+
       <section id="info1">
         <div class="container">
           <div class="row">
               <div class="col-md-6 col-sm-6">
                 <div class="info-left">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9daY0m4N9L4KmAFYec7rGx9I9uGhZhhUnImbGiqXzEnJxoKX8fQ">
+                  <img src="img/eren.jpeg">
                 </div>
               </div>
               <div class="col-md-6 col-sm-6">
@@ -84,119 +78,104 @@
                   <h2>Here is one of the main characters included in this Website</h2>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quis tempore soluta repellat eveniet id, pariatur, inventore cum magnam nihil esse temporibus? Tenetur autem iure, eaque porro eum unde saepe!</p>
                   <br>
-                  <a class="btn btn-default btn-lg">Read More</a>
+                  <a class="btn btn-default btn-lg" href="#home">Read More</a>
                 </div>
               </div>
           </div>
         </div>
       </section>
-      <br>
-      <section id="info2">
-          <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="info-left">
-                      <h2>Info Block 1</h2>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quis tempore soluta repellat eveniet id, pariatur, inventore cum magnam nihil esse temporibus? Tenetur autem iure, eaque porro eum unde saepe!</p>
+      <hr>
+      <div class = "jumbotron text-center">
+          <header id="howtomake">
+          <h1>How one can learn Bootstrap</h1>
+          <p>By practicing like this website maker Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facilis.</p>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi suscipit cumque dicta, alias itaque sequi vel in dolorum, quas voluptates minus aliquam est nostrum enim, aspernatur similique temporibus aperiam dolore? Deserunt sit assumenda id molestiae iusto error repudiandae temporibus aliquid sunt mollitia, ratione eaque maxime dolorem neque deleniti reiciendis. Cum soluta voluptates magnam officiis aspernatur. Deserunt laborum autem consequatur, eius, blanditiis eveniet possimus veritatis exercitationem sint aperiam molestiae nulla dolorum qui. Amet accusantium neque quam, pariatur consequatur culpa cum nemo obcaecati iste repudiandae repellendus provident magnam quae aut nobis sequi natus perferendis ipsum qui harum aspernatur similique eveniet reiciendis!</p>
+      </div> 
+<br>
+<div class="container" id="a2">
+    <h2>Our this week's favorite characters</h2>
+    <div class="row">
+        <div class="col-sm-12">
+    
+            <div id="my-slider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#my-slider" data-slide-to="1"></li>
+                    <li data-target="#my-slider" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/senku.jpeg" class="center" alt="senku" style="width: 100%" height="70px">
+                        <div class="carousel-caption">
+                            <h1 class="a1">Senku from Dr. Stone</h1>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/hyakk.jpeg" class="center" alt="hyakkimaru" style="width: 100%" height="70px">
+                        <div class="carousel-caption">
+                            <h1 class="a1">Hyakkimaru from Dororo</h1>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/saitama.jpeg" class="center" alt="saitama" style="width: 100%" height="70px">
+                        <div class="carousel-caption">
+                            <h1>Saitama from One Punch Man</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+          </div>
+        </div>  
+    </div>
+</div>
+                      <br>
+            <section id="contact">
+              <div class="container">
+                <div class="row">
+                  <header>
+                    <h2><u>Help us in improving our site</u></h2>
+                  </header>
+                   <br>
+                  <div class="col-md-5 col-sm-5">
+                    <form>
+                        <div class="form-group">
+                            <label?>Full Name: </label>
+                            <input class="form-control"  type="text" name="" value="" placeholder="Enter Name">
+                          </div>
+                          <div class="form-group">
+                              <label?>E-mail: </label>
+                              <input class="form-control"  type="text" name="" value="" placeholder="Enter E-mail">
+                          </div>
+                          <div class="form-group">
+                                <label?>Mobile Number: </label>
+                                <input class="form-control"  type="number" name="" value="" placeholder="Enter Mobile Number">
+                          </div>
+                          <div class="form-group">
+                              <label?>Message: </label>
+                              <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+                            </div>
+                            <button class="btn btn-default">Submit</button>
+                        </form>
+                      </div>
+                      <div class="col-md-7 col-sm-7">
+                        
+                      </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="info-right">
-                    <h2>Info Block 2</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quis tempore soluta repellat eveniet id, pariatur, inventore cum magnam nihil esse temporibus? Tenetur autem iure, eaque porro eum unde saepe!</p>
-                 </div>
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-      <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            
-            <br><br><br><br>
-            
-                  <br><br><br><br>
-                  <div class="container mt-3">
-
-                        <h2>Carousel</h2>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        
-                          <!-- Indicators -->
-                          <ul class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                          </ul>
-                          
-                          <!-- The slideshow -->
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="../Assignment2/img/img1.jpeg" alt="Los Angeles" width="1100" height="500">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="../Assignment2/img/img2.jpeg" alt="Chicago" width="1100" height="500">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="../Assignment2/img/img3.jpeg" alt="New York" width="1100" height="500">
-                            </div>
-                          </div>
-                          
-                          <!-- Left and right controls -->
-                          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                          </a>
-                          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                          </a>
-                        </div>
-                        
-                        </div>
-                      <br>
-        <div class = "jumbotron text-center">
-            <header>
-            <h1>How one can learn Bootstrap</h1>
-            <p>By practicing like this website maker Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facilis.</p>
-            </header>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Rerum, accusantium quae totam vitae dolor molestiae? 
-            Sint inventore aliquam accusantium dignissimos, in tempora, 
-            quia fugit iusto iste aut quae eaque doloremque ipsum, voluptate minus. 
-            Odit nesciunt, fugit ad aliquam porro voluptates, eos voluptas repudiandae 
-            rerum esse blanditiis quod labore pariatur earum adipisci eius molestias 
-            nulla similique reprehenderit nam quis soluta delectus?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Sequi delectus accusamus nihil distinctio repudiandae impedit 
-            totam quibusdam maiores sit. Illo optio facilis tenetur veritatis 
-            natus sequi ipsum blanditiis excepturi asperiores nostrum soluta repellendus, 
-            dolorem error nemo quod magnam beatae totam alias amet deleniti earum assumenda 
-            culpa rem. Deleniti voluptatem eum labore quisquam magnam, repellat ab voluptate 
-            perspiciatis veritatis aliquam, inventore sint ducimus ullam eveniet id expedita 
-            aspernatur maiores dignissimos ut sunt quaerat dolores! Earum a quis sed, 
-            perspiciatis in veritatis explicabo quo nulla praesentium ipsam quibusdam dolorem 
-            optio autem sapiente atque impedit, inventore ea dignissimos. Sunt provident dicta 
-            ea saepe fugit recusandae similique sapiente ipsa fuga sequi rerum, iusto facere quod, 
-            voluptate dolor! Earum, tenetur. Autem reiciendis vero cum illo deserunt consequuntur 
-            cumque quae quidem doloribus culpa! Hic facilis aspernatur sit distinctio, animi in dolor! 
-            Eum dolor vitae vero neque. Consectetur error officia placeat rerum tenetur labore hic 
-            incidunt perferendis, eaque obcaecati consequatur accusamus odio, minus, quisquam sed ipsum 
-            at omnis repellat quia quibusdam recusandae ipsam deleniti maiores! Consequatur consectetur 
-            dolor commodi ratione explicabo dolores quo deleniti, magnam perferendis, accusamus eos 
-            dolore illum voluptatem omnis sit. Eveniet expedita labore necessitatibus nostrum qui, 
-            quisquam aperiam laudantium adipisci laborum totam dignissimos, ipsum repellat reprehenderit 
-            distinctio voluptatibus quaerat dolorem laboriosam. Similique harum fugiat sapiente enim 
-            molestias ab, repellat consequatur exercitationem nulla atque aspernatur dicta illo porro 
-            iusto perferendis cumque, corrupti ipsa minus suscipit dignissimos! Vel non odit quibusdam 
-            amet repellat laudantium quod aliquid consectetur aliquam obcaecati adipisci maxime illum 
-            pariatur sed fugiat nemo deleniti nam atque, quas tempore dicta molestias, quo dignissimos at. 
-            Quidem, saepe repellat excepturi optio fuga sint, nulla placeat, sed ad corrupti eum blanditiis 
-            veniam. Ipsa eum aut repellendus aliquid sed quas maiores accusamus minus sit ipsam, tenetur 
-            itaque hic fugiat quaerat fuga harum natus quis nobis voluptates dicta facere.
-            </p>
-        </div>
-
+              </section>
         <footer>
                 <marquee direction = "right" scrollamount = 15>
                 <span id="foot">Copyright ©️ The Bootstrappers</span></marquee>
