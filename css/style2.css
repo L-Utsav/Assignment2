@@ -75,7 +75,8 @@ p{
     color: #000;
 }
 #contact{
-    background: antiquewhite;
+    background: url("../img/lelouch.jpeg");
+    background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
     border-top: #333 7px solid;
