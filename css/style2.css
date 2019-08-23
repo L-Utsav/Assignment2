@@ -44,14 +44,14 @@ p{
 }
 
 #info1, #info2{
-    padding-top: 40px;
+    padding-top: 70px;
     background-color: #f1f1f1;
     padding-bottom: 20px;
 
 }
 
 #showcase1, #showcase2{
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 30px;
 }
 .center{
@@ -76,13 +76,13 @@ p{
     height: 100% !important;
 }
 #about{
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 #a2{
     width: 50%;
     padding-bottom: 0px;
-    padding-top: 40px;
+    padding-top: 90px;
     background: #000;
     text-align: center;
     padding-left: 0px;
@@ -91,12 +91,12 @@ p{
     color: white;
 }
 #home{
-    padding-top: 50px;
+    padding-top: 110px;
     padding-bottom: 20px;
 }  
 
 #about{
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -116,7 +116,7 @@ p{
 }
 
 #contact{
-    padding-top: 40px;
+    padding-top: 90px;
     background: url("../img/lelouch.jpeg");
     background-size: 100%;
     padding-bottom: 40px;
@@ -132,3 +132,7 @@ footer{
     padding-bottom: 30px;
     font-size: 30px;
 }
+.fa.fa-search{
+    font-size: 20px;
+    color: #645c5c;
+    }
