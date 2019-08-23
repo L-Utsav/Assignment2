@@ -10,6 +10,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: Roboto;
 }
+
 .navbar-default{
     border: 0;
     font-family: Poppins;
@@ -82,7 +83,7 @@ p{
 #a2{
     width: 50%;
     padding-bottom: 0px;
-    padding-top: 90px;
+    padding-top: 40px;
     background: #000;
     text-align: center;
     padding-left: 0px;
@@ -91,12 +92,12 @@ p{
     color: white;
 }
 #home{
-    padding-top: 110px;
+    padding-top: 70px;
     padding-bottom: 20px;
 }  
 
 #about{
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -116,7 +117,7 @@ p{
 }
 
 #contact{
-    padding-top: 90px;
+    padding-top: 70px;
     background: url("../img/lelouch.jpeg");
     background-size: 100%;
     padding-bottom: 40px;
@@ -134,5 +135,5 @@ footer{
 }
 .fa.fa-search{
     font-size: 20px;
-    color: #645c5c;
+    color: grey;
     }
